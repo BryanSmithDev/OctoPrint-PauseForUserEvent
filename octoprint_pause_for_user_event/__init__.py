@@ -5,6 +5,8 @@ import octoprint.plugin
 import logging
 from octoprint.events import eventManager, Events
 
+__plugin_pythoncompat__ = ">=2.7,<4"
+
 class pause_for_user_event(octoprint.plugin.SettingsPlugin):
     
     def get_settings_defaults(self):
